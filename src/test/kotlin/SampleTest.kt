@@ -1,3 +1,4 @@
+import ed.demo.Sample
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
