@@ -219,16 +219,12 @@ fun main(args: Array<String>) {
     }
 
     fun getStringLength2(obj: Any): Int? {
-        // `obj` 在该条件分支内自动转换成 `String`
         if (obj !is String) return null
-        // 在离开类型检测分支后，`obj` 仍然是 `Any` 类型
         return obj.length
     }
 
     fun getStringLength3(obj: Any): Int? {
-        // `obj` 在该条件分支内自动转换成 `String`
         if (obj is String && obj.length > 0) return obj.length
-        // 在离开类型检测分支后，`obj` 仍然是 `Any` 类型
         return null
     }
 
